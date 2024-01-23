@@ -2,19 +2,29 @@
 
 ## Table of Contents
 1. [Task 1: The Design Flow – 7 Segment LED Display](#1-task-1)
-2. [Task 2](#2-task-2)
-3. [Task 3](#2-task-2)
+2. [Task 2: Explore Netlist Viewer and Timing Analyzer](#2-task-2)
+3. [Task 3: Test Yourself](#2-task-2)
 
+# Task 1: The Design Flow – 7 Segment LED Display
 
-![image](image/hex_to_7seg.png)
+hex_to_7seg file
+![image](images/hex_to_7seg.png)
 
-![image](image/task1_top.png)
-![image](image/task1_top.png)
-![image](image/MapView.png)
-Shows connection diagram for various inputs and outputs of task1_top
-![image](image/Delays.png)
+task1_top file
+![image](images/task1_top.png)
+
+# Task 2: Explore Netlist Viewer and Timing Analyzer
+Shows connection diagram for various inputs and outputs of task1_top.
+
+![image](images/MapView.png)
+
 Changing the temperature does not seem to affect the delays?
+![image](images/Delays.png)
 
+# Task 3: Test Yourself
 I modified the top file to include all 10 switches as an input and created 3 instances of hex_to_7seg to display this.
-![image](image/task2_top.png)
-![image](image/task2_demo.jpg)
+
+![image](images/task2_top.png)
+
+Works correctly
+![image](images/task2_demo.jpg)
