@@ -18,7 +18,7 @@ Shows connection diagram for various inputs and outputs of task1_top.
 
 ![image](images/MapView.png)
 
-Changing the temperature does not seem to affect the delays?
+The lower the temperature the lower the properagation delay
 ![image](images/Delays.png)
 
 # Task 3: Test Yourself
