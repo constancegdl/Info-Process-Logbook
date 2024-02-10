@@ -5,11 +5,11 @@
 A design is provided (`lab4_task1.zip`) that allows a NIOSII to communicate with the host PC through a UART interface. The main difference of this design is the addition of **off-chip memory**, **extending the memory capacity** of the system.
 
 Design in zip file:
-![[lab4_design.png]]
+![lab4_design](images/lab4_design.png)
 
 The system also includes a ==PLL (Phase-Locked Loop)==.
-![[pll_1.png]]
-![[pll_2.png]]
+![pll_pt1](images/pll_1.png)
+![pll_pt2](images/pll_2.png)
 - The PLL can **generate a signal whose phase is related to an input signal**. 
 - Signals to/from off-chip memory exhibit considerable delays
 	- Therefore a shifted version of the clock (phase shift) that drives the off-chip memory related to NIOS needs to be used
@@ -23,7 +23,7 @@ There are two sides to the communication, the host side (`host.py`) and board si
 - waits for a response
 - processes the response
 
-![[host_code.png]]
+![host_code](images/host_code.png)
 
 - The host program sends signals to the board, waits on a response and then processes the response. 
 - The board side code polls the UART port for input. Board-Side Code (`jtag-uart-test/software/task1/task1.c`):
@@ -45,18 +45,20 @@ The board-side code performs the following steps:
     - The text buffer is finally emptied out so that it can be used for the next input. Most of the code for the rest of the course will be added inside the while loop between generate_text and `print_text` function as this is best place to react to the produced string and provide a response that will be passed back to the host.
 
 Below is the task1.c code with each step highlighted out:
-![[board_code.png]]
+![board_code](/images/board_code.png)
 
 After building the code in Quartus and Eclipse, enter the command
 `nios2-terminal.exe <<< hello` in the NIOS II terminal to see if the communication is working.
 
 Output was:
-![[nios_terminal_1.png]]
+![nios_terminal_1](images/nios_terminal_1.png)
 
 As expected, it detected the input hello, and counted 5 characters, exiting with Ctrl-D after the newline.
 
 Next, I ran the host.py program.
-![[nios_py_output.png]]
+![nios_py_output](images/nios_py_output.png)
 
 As seen above, it correctly detected the input sent by the host program; in this case, "test2".
-![[input_host.png]]Most of the processing for the coursework will use variations of the perform_computation that will be used to send and receive data to and from the NIOS processor.
+![input_host](images/input_host.png)
+
+Most of the processing for the coursework will use variations of the perform_computation that will be used to send and receive data to and from the NIOS processor.
