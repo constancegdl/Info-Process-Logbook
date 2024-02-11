@@ -25,7 +25,9 @@ Generate HDL, copy the instance v file into project and replace the C++ file wit
 
 <u> Results: </u>
 
+![gif](images/gif_results1.gif)
 ![image](images/video_results1.MOV)
+
 
 --> The LEDs should indicate the titling position of your board like a bubble floating in a spirit level.
 
