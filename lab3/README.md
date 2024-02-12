@@ -105,8 +105,10 @@ One way to increase the performance of the system is to consider converting the 
 New code:
 ![image](images/code3.png)
 
-- Effect on execution time: INCREASE => Fixed-point arithmetic involves additional operations such as shifting and scaling, which can introduce overhead compared to floating-point arithmetic.
-- Effect on Transfer function: Decrease in accuracy => fixed-point arithmetic introduces quantization errors due to limited precision, + effect on  deviations from the ideal frequency response
+- Effect on execution time: DECREASE => Floating-point arithmetic involves additional operations such as shifting and scaling. Arithmetic is simpler, hence the sampling frequency increases.
+
+
+- Effect on Transfer function: Decrease in accuracy => fixed-point arithmetic introduces quantization errors due to limited precision.
 
 ### Measuring the sampling frequency of the accelerometer
 
