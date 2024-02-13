@@ -112,9 +112,6 @@ New code:
 
 - Effect on Transfer function: Decrease in accuracy => fixed-point arithmetic introduces quantization errors due to limited precision.
 
-### Measuring the sampling frequency of the accelerometer
-
-
 
 
 
