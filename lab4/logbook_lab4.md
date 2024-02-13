@@ -45,7 +45,7 @@ The board-side code performs the following steps:
     - The text buffer is finally emptied out so that it can be used for the next input. Most of the code for the rest of the course will be added inside the while loop between generate_text and `print_text` function as this is best place to react to the produced string and provide a response that will be passed back to the host.
 
 Below is the task1.c code with each step highlighted out:
-![board_code](/images/board_code.png)
+![board_code](images/board_code.png)
 
 After building the code in Quartus and Eclipse, enter the command
 `nios2-terminal.exe <<< hello` in the NIOS II terminal to see if the communication is working.
