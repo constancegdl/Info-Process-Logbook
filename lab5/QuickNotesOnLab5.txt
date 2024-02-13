@@ -1,0 +1,5 @@
+EC2 - Elastic Computing 2
+used in IaaS mode - Infastructure as a service.
+SSH - Secure Shell Protocol is in application layer runs above TCP
+SFTP - Secure File Tranfer protocol - Part of SSH continuous data SSH streams
+0.0.0.0 IP gets server to look for external connections. Whereas 127.0.0.0 is localhost

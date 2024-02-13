@@ -1,0 +1,10 @@
+NoSQL Databases:
+-Provide horizontal scalability
+-Data not stored in relations
+-increased flexibilty
+-uses hashing
+-good for big data
+Partition key and Sort key for each element
+Hashes to partition key then ordering function used on sort key
+
+NoSQL uses BASE - Basically Available Soft state Eventually conistent
