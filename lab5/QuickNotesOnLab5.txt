@@ -3,3 +3,9 @@ used in IaaS mode - Infastructure as a service.
 SSH - Secure Shell Protocol is in application layer runs above TCP
 SFTP - Secure File Tranfer protocol - Part of SSH continuous data SSH streams
 0.0.0.0 IP gets server to look for external connections. Whereas 127.0.0.0 is localhost
+
+SSH:
+Client initalites by contacting server
+server sends public key 
+public and private key using to gain acess
+negoites parameters and open secure channel
